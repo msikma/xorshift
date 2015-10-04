@@ -27,3 +27,12 @@ Even using them to verify other Xorshift implementations may be dubious, given
 the observed typos in the original source material.  The author thinks he has
 corrected everything that needs to be corrected, but you should check for yourself.
 In other words, use this code at your own risk. :-)
+
+Modifications and credits
+-------------------------
+
+This code was written by Joe Wakeling and modified slightly by Michiel Sikma
+to make it usable in other projects.
+For the original version, see <https://github.com/WebDrake/xorshift>.
+
+* Added `.h` file, removed the `main()` and renamed `xorwow()` to `xor192()`.
