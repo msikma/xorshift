@@ -1,5 +1,4 @@
 #include <inttypes.h>
-#include <stdint.h>
 
 #ifndef __XORSHIFT_FNS__
 #define __XORSHIFT_FNS__
