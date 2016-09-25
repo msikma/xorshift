@@ -31,8 +31,9 @@ In other words, use this code at your own risk. :-)
 Modifications and credits
 -------------------------
 
-This code was written by Joe Wakeling and modified slightly by Michiel Sikma
-to make it usable in other projects.
+This code was written by Joe Wakeling and modified slightly by Michiel Sikma.
 For the original version, see <https://github.com/WebDrake/xorshift>.
 
 * Added `.h` file, removed the `main()` and renamed `xorwow()` to `xor192()`.
+* Minor reformatting
+* Added `xor32f()` functions, etc.

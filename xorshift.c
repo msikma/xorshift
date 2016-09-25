@@ -1,4 +1,5 @@
 #include <inttypes.h>
+#include <xorshift.h>
 
 uint32_t xor32() {
 	static uint32_t y = 2463534242UL;
@@ -53,4 +54,28 @@ uint32_t xor192() {
 	w = v;
 	v = (v ^ (v << 4)) ^ (t ^ (t << 1));
 	return (d += 362437) + v;
+}
+
+double xor32f() {
+  return xor32() / XORSHIFT_MAX_UINT32F;
+}
+
+double xor64f() {
+  return xor64() / XORSHIFT_MAX_UINT32F;
+}
+
+double xor96f() {
+  return xor96() / XORSHIFT_MAX_UINT32F;
+}
+
+double xor128f() {
+  return xor128() / XORSHIFT_MAX_UINT32F;
+}
+
+double xor160f() {
+  return xor160() / XORSHIFT_MAX_UINT32F;
+}
+
+double xor192f() {
+  return xor192() / XORSHIFT_MAX_UINT32F;
 }
